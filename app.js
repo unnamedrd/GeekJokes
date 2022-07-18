@@ -6,7 +6,7 @@ fetch(url)
   .then((data) => {
     console.log(data);
     //document.querySelector('img')
-    document.querySelector('currentJoke') = data.joke
+    document.querySelector('div').innerText = data.joke
   })
   .catch((err) => {
     console.log(`error ${error}`);
